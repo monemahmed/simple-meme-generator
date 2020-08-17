@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>MEME-MAKER</title>
+  </head>
+  <body>
+    <div class="header"><h1>Simple Meme Generator</h1></div>
+
+    <div class="drawing">
+      <div class="select_canvas">
+        <div class="option">
+          <input
+            type="radio"
+            name="select-canvas"
+            value="single_canvas"
+            id="single_canvas"
+          />
+          <label for="single_canvas">Single Picture Meme</label>
+        </div>
+
+        <div class="option">
+          <input
+            type="radio"
+            name="select-canvas"
+            value="double_canvas"
+            id="double_canvas"
+          />
+          <label for="double_canvas">Double Picture Meme</label>
+        </div>
+      </div>
+      <div class="canvas">
+        <div class="single-canvas">
+          <canvas id="sc" width="400" height="400"></canvas>
+          <div class="add_picture">
+            <label for="bgImage">Add Background Image</label>
+            <input type="file" id="bgImage" />
+          </div>
+        </div>
+        <div class="double-canvas">
+          <canvas id="dc" width="400" height="400"></canvas>
+          <div class="add_picture">
+            <label for="bgImageTop">Add Image at Top </label>
+            <input type="file" id="bgImageTop" />
+            <br />
+            <label for="bgImageBottom">Add Image at Bottom</label>
+            <input type="file" id="bgImageBottom" />
+          </div>
+        </div>
+      </div>
+      <div class="textBar">
+        <label for="text-top">Text at top:</label>
+        <br />
+        <input type="text" id="text-top" />
+        <br />
+        <label for="text-bottom">Text at bottom:</label>
+        <br />
+        <input type="text" id="text-bottom" />
+      </div>
+    </div>
+    <script src="JS/app.js"></script>
+  </body>
+</html>
